@@ -1,0 +1,12 @@
+.location_country{
+  font-weight: 600;
+  font-size: 20px;
+  padding: 20px;
+}
+.head{
+  font-size: 160px;
+  padding-top: 25px;
+}
+body{
+  background-color: solid brown;
+}

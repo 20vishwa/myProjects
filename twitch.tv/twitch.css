@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  background: #140d21;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 0.8em;
+}
+#titlebar{
+  background: #140d21;
+  color: #efecf6;
+  text-align:center;
+  text-shadow:  /* title outlined in supported browsers */
+    -2px -2px 0 #6441a5,
+    2px -2px 0 #6441a5,
+    -2px 2px 0 #6441a5,
+    2px 2px 0 #6441a5;
+}
+#searchbar{
+  background: #e0d9ed;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  outline: none;
+  width: 160px;
+  margin-bottom: 3px;
+  padding-left: 8px;
+}
+
+.container{
+  width: 350px;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 1px;
+  background: #281a42;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.user-box{
+  background: #3c2763;
+  color: #e0d9ed;
+  width: 340px;
+  margin: 3px auto;
+  padding: 9px;
+}
+.user-box:hover{
+  background: #6441a5;
+}
+img{
+  width: 70px;
+  height: 70px;
+  background: #000;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border: 5px solid #777; /* default offline colour */
+}
+
+.online-img{  /* apply when user is streaming */
+  border-color: #4DF926;
+}
+.inactive-img{  /* apply when account disabled */
+  border-color: #000;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+
+.box-right{
+  width: 260px;
+  display:inline-block;
+  position: absolute;
+}
+.user-name{  /* use API name */
+  text-align: center;
+  margin: 1px 0 17px 0;
+}
+.user-status{  /* use API status */
+  color: #a28dc9;
+  text-align: center;
+}
+.online-status{  /* apply when user is streaming */
+  color: #4DF926;
+}

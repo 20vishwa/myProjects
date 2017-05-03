@@ -8,9 +8,16 @@ body{
 }
 
 hr{
-  width: 600px;
+  width: 520px;
   border-bottom: 1.5px solid black;
 }
 li{
   padding-top: 20px;
+}
+.quote-box{
+  width: 600px;
+  margin: 5em auto;
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 1em;
 }

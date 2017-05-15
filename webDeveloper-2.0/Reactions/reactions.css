@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat');
+
+
+body{
+    font-family: 'Montserrat',sans-serif;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+#shape{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+}
+#results {
+	background-color: #3280BC;
+	color: white;
+	border: 1px groove white;
+	max-width:200px;
+	float:right;
+	padding-left: 15px;
+	padding-right: 15px;
+}

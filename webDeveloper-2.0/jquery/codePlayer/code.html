@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Code Player</title>
+    <link rel="stylesheet" href="code.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="title">
+            Code player
+        </div>
+        <div id="buttonContainer">
+
+            <div class="toggleButton active" id="html">HTML</div>
+
+            <div class="toggleButton" id="css">CSS</div>
+
+            <div class="toggleButton" id="javascript">JavaScript</div>
+
+            <div class="toggleButton active" id="output">Output</div>
+ 
+        </div>
+    </div>
+    <div id="bodyContainer">
+
+        <textarea class="panel" id="htmlPanel">Hello World!</textarea>
+
+        <textarea class="panel hidden" id="cssPanel">p{ color:green; }</textarea>
+
+        <textarea class="panel hidden" id="javascriptPanel">alert("hi there);</textarea>
+
+        <iframe src="" id="outputPanel" class="panel"></iframe>
+
+    </div>
+
+    <script src="code.js" charset="utf-8">
+
+
+    </script>
+</body>
+
+</html>

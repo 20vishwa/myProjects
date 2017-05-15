@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu, helvetica;
+}
+
+#navbar {
+    height: 35px;
+    background-color: #EEEEEE;
+    border-bottom: 1px #BFBFBF solid;
+    margin: 0;
+}
+
+#title {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    margin: 0;
+    float: left;
+}
+
+.toggleButton {
+    float: left;
+    border-bottom: solid 1px #BFBFBF;
+    border-top: solid 1px #BFBFBF;
+    border-left: solid 1px #BFBFBF;
+    position: relative;
+    margin: 1.4px 0;
+    left: 430px;
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+#html {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#css:hover,
+#javascript:hover,
+#output:hover,
+#html:hover {
+    background-color: azure;
+    cursor: pointer;
+}
+
+#output {
+    border-right: solid 1px #BFBFBF;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.active {
+    background-color: #E8F2FF;
+}
+
+textarea {
+    resize: none;
+    border-top: none;
+}
+
+.panel {
+    float: left;
+    width: 50%;
+    border-left: none;
+}
+
+iframe {
+    border: none;
+}
+
+.hidden {
+    display: none;
+}

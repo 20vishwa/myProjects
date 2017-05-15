@@ -1,0 +1,41 @@
+body {
+    font-family: helvetica, sans-serif;
+}
+
+label {
+    font-size: 120%;
+    width: 150px;
+    float: left;
+    position: relative;
+    top: 8px;
+}
+
+input {
+    font-size: 25px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid grey;
+    margin-bottom: 10px;
+}
+
+#wrapper {
+    width: 500px;
+    margin: 0 auto;
+}
+
+#submitButton {
+    width: 130px;
+    margin-left: 150px;
+}
+
+#error {
+    color: red;
+    font-size: 80%;
+}
+
+#success {
+    color: green;
+    font-size: 80%;
+    display: none;
+    margin-bottom: 20px;
+}

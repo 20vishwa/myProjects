@@ -1,0 +1,95 @@
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: monospace;
+}
+
+#slate {
+    height: 440px;
+    width: 380px;
+    background-color: darkslategray;
+    border: solid #F0B487;
+    border-width: 40px 22px;
+    border-radius: 20px;
+    margin: 60px auto;
+    -webkit-box-shadow: 1px 6px 10px 2px dimgrey;
+    box-shadow: 1px 6px 10px 2px dimgrey;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#choose {
+    color: wheat;
+    font-size: 35px;
+    font-family: cursive, monospace;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+#firstPage {
+    display: none;
+}
+
+#secPage {
+    display: none;
+}
+
+#thirdPage {
+    display: none;
+}
+
+.players {
+    color: darkgray;
+    font-size: 30px;
+}
+
+#onePlayer,
+#twoPlayer {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    border: dashed 2px transparent;
+}
+
+#onePlayer:hover,
+#twoPlayer:hover {
+    color: white;
+    border: dashed 2px grey;
+    border-radius: 20px;
+}
+
+#back {
+    font-size: 30px;
+    color: grey;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#back:hover {
+    color: white;
+}
+
+#gameBoard {
+    height: 340px;
+    width: 320px;
+    margin: 15px 10px 5px 30px;
+    /*display: none;*/
+}
+
+.square {
+    width: 100px;
+    height: 108px;
+    float: right;
+    cursor: pointer;
+}
+
+.bottom {
+    border-bottom: 2px grey solid;
+}
+
+.right {
+    border-right: 2px grey solid;
+}

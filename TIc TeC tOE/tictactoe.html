@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="tictactoe.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="slate">
+            <div id="firstPage">
+                <div id="choose">
+                    How do you want to play?
+                </div>
+                <div class="players">
+                    <span id="onePlayer"> One Player </span>
+                    <sapn id="twoPlayer">Two Player</sapn>
+                </div>
+
+                <div id='back'><i aria-hidden='true'></i> </div>
+            </div>
+            <div id="secPage">
+
+                <div id="choose">
+                    Would you like to be X or O?
+                </div>
+                <div class="players">
+                    <span id="onePlayer"> X </span>
+                    <sapn id="twoPlayer"> O </sapn>
+                </div>
+
+                <div id='back'><i class="fa fa-arrow-left" aria-hidden='true'></i> Back </div>
+            </div>
+
+            <div id="thirdPage">
+
+                <div id="choose">
+                    Player 1: Choose one from X or O?
+                </div>
+                <div class="players">
+                    <span id="onePlayer"> X </span>
+                    <sapn id="twoPlayer"> O </sapn>
+                </div>
+
+                <div id='back'><i class="fa fa-arrow-left" aria-hidden='true'></i> Back </div>
+
+            </div>
+            <div id="gameBoard">
+                <div class="row">
+                    <div class="square bottom right"></div>
+                    <div class="square bottom right"></div>
+                    <div class="square bottom"></div>
+                </div>
+                <div class="row">
+                    <div class="square bottom right"></div>
+                    <div class="square bottom right"></div>
+                    <div class="square bottom"></div>
+                </div>
+                <div class="row">
+                    <div class="square right"></div>
+                    <div class="square right"></div>
+                    <div class="square"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="tictactoe.js" charset="utf-8"></script>
+</body>
+
+</html>

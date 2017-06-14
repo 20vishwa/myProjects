@@ -23,16 +23,16 @@
             <div class="toggleButton" id="javascript">JavaScript</div>
 
             <div class="toggleButton active" id="output">Output</div>
- 
+
         </div>
     </div>
     <div id="bodyContainer">
 
-        <textarea class="panel" id="htmlPanel">Hello World!</textarea>
+        <textarea class="panel" id="htmlPanel"><p id="para">Hello World!</p></textarea>
 
         <textarea class="panel hidden" id="cssPanel">p{ color:green; }</textarea>
 
-        <textarea class="panel hidden" id="javascriptPanel">alert("hi there);</textarea>
+        <textarea class="panel hidden" id="javascriptPanel">document.getElementById("para").innerHTML = "Hello vishwa!";</textarea>
 
         <iframe src="" id="outputPanel" class="panel"></iframe>
 

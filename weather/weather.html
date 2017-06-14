@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>weather</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="weather.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
     <script src="weather.js" charset="utf-8"></script>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container col-xs-12 text-center">
-      <header class="head">
-        <h1>Free C<i class="fa fa-sun-o"></i>de Camp </h1>
-        <h1>Weather App</h1>
-        <h2>Your local weather</h2>
-      </header>
-      <div class="row">
-        <p class="location_country"></span></p>
-      </div>
-      <h3 class="temperature"></h3>
-      <form action="/select-metric">
-        <label>
+        <header class="head">
+            <h1>Free C<i class="fa fa-sun-o"></i>de Camp </h1>
+            <h1>Weather App</h1>
+            <h2>Your local weather</h2>
+        </header>
+        <div class="row">
+            <p class="location_country"></p>
+        </div>
+        <h3 class="temperature"></h3>
+        <form action="/select-metric">
+            <label>
           <input type="radio" checked name="farenheit-celcius" id="c"> Celsius</label>
-        <label>
+            <label>
           <input type="radio" name="farenheit-celcius" id="f"> Farenheit</label>
-      </form>
+        </form>
     </div>
-  </body>
+</body>
+
 </html>

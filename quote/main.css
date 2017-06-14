@@ -1,23 +1,39 @@
-.container{
-  text-align: center;
-  padding-top: 50px;
+body {
+    font-family: Ubuntu, "times new roman", times, roman, serif;
 }
 
-body{
-  background-color: aqua;
+.container {
+    text-align: center;
+    padding-top: 30px;
 }
 
-hr{
-  width: 520px;
-  border-bottom: 1.5px solid black;
+body {
+    background-color: aqua;
 }
-li{
-  padding-top: 20px;
+
+hr {
+    width: 520px;
+    border-bottom: 1.5px solid black;
 }
-.quote-box{
-  width: 600px;
-  margin: 5em auto;
-  padding: 50px;
-  background-color: #fff;
-  border-radius: 1em;
+
+.share-quote {
+    float: left;
+}
+
+#buttons {
+    position: relative;
+}
+
+.get-quote {
+    position: absolute;
+    right: 0;
+}
+
+.quote-box {
+    width: 700px;
+    height: 390px;
+    margin: 5em auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 1em;
 }

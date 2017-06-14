@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>pomodoro clock</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="pomodore.css">
+
+    </head>
+
+    <body>
+        <div class="container col-xs-12 text-center">
+            <div id="heading" class="row">
+                pomodoro clock
+            </div>
+            <div class="row" id="session">
+                <div id="breakSession">
+                    <p>BREAK LENGTH</p>
+                    <i class="fa fa-minus" aria-hidden="true" id="breakminus"></i><span id="breakNum">5</span> <i class="fa fa-plus" aria-hidden="true" id="breakplus"></i>
+                </div>
+                <div id="workSession">
+                    <p>SESSION LENGTH</p>
+                    <i class="fa fa-minus" aria-hidden="true" id="sessionminus"></i> <span id="sessionNum">25</span> <i class="fa fa-plus" aria-hidden="true" id="sessionplus"></i>
+                </div>
+            </div>
+            <div id="circle">
+                <div id="top-text">Session</div>
+                <div id="timer">25</div>
+            </div>
+            <p id="pause" class="lead"></p>
+            <p class="lead"> Pause the clock Then choose break and session times and then click on the clock to start the clock.</p>
+
+        </div>
+
+
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="pomodore.js" charset="utf-8"></script>
+    </body>
+
+</html>

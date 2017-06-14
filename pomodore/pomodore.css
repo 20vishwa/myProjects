@@ -1,0 +1,85 @@
+body {
+    background-color: #333333;
+    color: white;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#heading {
+    margin-top: 20px;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 70px;
+    display: block;
+}
+
+#session {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#breakSession {
+    margin: 20px;
+}
+
+#workSession {
+    margin: 20px;
+}
+
+#breakNum {
+    padding: 10px 15px;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+#sessionNum {
+    padding: 10px 15px;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+p {
+    margin: auto;
+}
+
+.fa {
+    position: relative;
+    bottom: 5.5px;
+}
+
+#circle {
+    margin-top: 30px;
+    height: 300px;
+    width: 300px;
+    border: solid 2px #99CC00;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#top-text {
+    margin-top: 40px;
+    font-size: 50px;
+}
+
+#timer {
+    font-size: 60px;
+    margin-top: 50px;
+}
+
+.lead {
+    font-size: 25px;
+    font-family: cursive;
+    margin-top: 10px;
+}
+
+.highlight {
+    color: #99CC00;
+}

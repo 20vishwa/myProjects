@@ -28,15 +28,15 @@
     text-align: center;
 }
 
-#firstPage {
-    display: none;
-}
-
 #secPage {
     display: none;
 }
 
 #thirdPage {
+    display: none;
+}
+
+#gameBoard {
     display: none;
 }
 
@@ -92,4 +92,8 @@
 
 .right {
     border-right: 2px grey solid;
+}
+.fa{
+    color: wheat;
+    padding: 20px 0 0 25px;
 }

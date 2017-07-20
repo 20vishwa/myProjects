@@ -1,8 +1,4 @@
 * {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
     font-family: monospace;
 }
 
@@ -13,7 +9,7 @@
     border: solid #F0B487;
     border-width: 40px 22px;
     border-radius: 20px;
-    margin: 60px auto;
+    margin: 50px auto;
     -webkit-box-shadow: 1px 6px 10px 2px dimgrey;
     box-shadow: 1px 6px 10px 2px dimgrey;
     -webkit-box-sizing: border-box;
@@ -36,25 +32,21 @@
     display: none;
 }
 
-#gameBoard {
-    display: none;
-}
-
 .players {
     color: darkgray;
     font-size: 30px;
 }
 
-#onePlayer,
-#twoPlayer {
+.onePlayer,
+.twoPlayer {
     display: block;
     text-align: center;
     margin: 0 auto;
     border: dashed 2px transparent;
 }
 
-#onePlayer:hover,
-#twoPlayer:hover {
+.onePlayer:hover,
+.twoPlayer:hover {
     color: white;
     border: dashed 2px grey;
     border-radius: 20px;
@@ -76,7 +68,7 @@
     height: 340px;
     width: 320px;
     margin: 15px 10px 5px 30px;
-    /*display: none;*/
+    display: none;
 }
 
 .square {
@@ -93,7 +85,32 @@
 .right {
     border-right: 2px grey solid;
 }
-.fa{
+
+.fa {
     color: wheat;
     padding: 20px 0 0 25px;
 }
+
+#reset {
+    display: none;
+}
+
+
+/*
+.score-reset {
+    display: fixed;
+    font-size: 30px;
+    margin: 0px auto;
+    color: #c3b2ea;
+}
+
+.player1-score {
+    margin-right: 10px;
+}
+
+.player1-score,
+.player2-score {
+    color: #963d44;
+    font-weight: 900;
+    font-size: 30px;
+}*/

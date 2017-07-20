@@ -14,64 +14,71 @@
 </head>
 
 <body>
-    <div class="container">
-        <div id="slate">
-            <div id="firstPage">
-                <div id="choose">
-                    How do you want to play?
-                </div>
-                <div class="players">
-                    <span id="onePlayer"> One Player </span>
-                    <sapn id="twoPlayer">Two Player</sapn>
-                </div>
 
-                <div id='back'><i aria-hidden='true'></i> </div>
+    <div id="slate">
+        <div id="firstPage">
+            <div id="choose">
+                How do you want to play?
             </div>
-            <div id="secPage">
-
-                <div id="choose">
-                    Would you like to be X or O?
-                </div>
-                <div class="players">
-                    <span id="onePlayer" class="ex"> X </span>
-                    <sapn id="twoPlayer" class="oh"> O </sapn>
-                </div>
-
-                <div id='back'><i class="fa fa-arrow-left" aria-hidden='true'></i> Back </div>
+            <div class="players">
+                <span id="onePlayer" class="onePlayer"> Player v/s Com </span>
+                <sapn id="twoPlayer" class="twoPlayer"> Two Players </sapn>
             </div>
 
-            <div id="thirdPage">
+            <div id='back'><i aria-hidden='true'></i> </div>
+        </div>
+        <div id="secPage">
 
-                <div id="choose">
-                    Player 1: Choose one from X or O?
-                </div>
-                <div class="players">
-                    <span id="onePlayer" class="ex"> X </span>
-                    <sapn id="twoPlayer" class="oh"> O </sapn>
-                </div>
-
-                <div id='back'><i class="fa fa-arrow-left" aria-hidden='true'></i> Back </div>
-
+            <div id="choose">
+                Would you like to be X or O?
             </div>
-            <div id="gameBoard">
-                <div class="row">
-                    <div class="square bottom right"></div>
-                    <div class="square bottom right"></div>
-                    <div class="square bottom"></div>
-                </div>
-                <div class="row">
-                    <div class="square bottom right"></div>
-                    <div class="square bottom right"></div>
-                    <div class="square bottom"></div>
-                </div>
-                <div class="row">
-                    <div class="square right"></div>
-                    <div class="square right"></div>
-                    <div class="square"></div>
-                </div>
+            <div class="players">
+                <span id="humanPlayer" class="ex onePlayer"> X </span>
+                <sapn id="computerPlayer" class="oh twoPlayer"> O </sapn>
             </div>
+
+            <div id='back'><i class="fa fa-arrow-left" aria-hidden='true'></i> Back </div>
+        </div>
+
+        <div id="thirdPage">
+
+            <div id="choose">
+                Player 1: Choose one from X or O?
+            </div>
+            <div class="players">
+                <span id="onePlayer" class="ex onePlayer"> X </span>
+                <sapn id="twoPlayer" class="oh twoPlayer"> O </sapn>
+            </div>
+
+            <div id='back'><i class="fa fa-arrow-left" aria-hidden='true'></i> Back </div>
 
         </div>
+        <div id="gameBoard">
+            <div class="row">
+                <div id="one" class="square bottom right"></div>
+                <div id="two" class="square bottom right"></div>
+                <div id="three" class="square bottom"></div>
+            </div>
+            <div class="row">
+                <div id="four" class="square bottom right"></div>
+                <div id="five" class="square bottom right"></div>
+                <div id="six" class="square bottom"></div>
+            </div>
+            <div class="row">
+                <div id="seven" class="square right"></div>
+                <div id="eight" class="square right"></div>
+                <div id="nine" class="square"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="reset">
+        <div class="btn btn-lg btn-primary btn-block">Reset</div>
+    </div>
+    <!--<div class="score-reset">
+            <span class="player1">Player 1 Score: </span><span class="player1-score">0</span>
+            <span class="player2">Player 2 Score: </span><span class="player2-score">0</span>
+        </div>-->
     </div>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->

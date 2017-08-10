@@ -95,12 +95,9 @@
     display: none;
 }
 
-
-/*
 .score-reset {
     display: fixed;
     font-size: 30px;
-    margin: 0px auto;
     color: #c3b2ea;
 }
 
@@ -113,4 +110,4 @@
     color: #963d44;
     font-weight: 900;
     font-size: 30px;
-}*/
+}

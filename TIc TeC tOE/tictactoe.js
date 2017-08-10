@@ -118,15 +118,14 @@ $(document).ready(function () {
         select = "oh";
         if (game_mode === 'humans') {
             player1.symbol = "O";
-            player1.your_turn = false;
+            player1.your_turn = true;
             player2.symbol = "X";
-            player2.your_turn = true;
+            player2.your_turn = false;
         } else {
             player1.symbol = "O";
-            player1.your_turn = false;
+            player1.your_turn = true;
             computer.symbol = "X";
-            computer.your_turn = true;
-            computer_move();
+            computer.your_turn = false;
         }
     });
     $('#thirdPage').on('click', '.ex', function () {
@@ -654,12 +653,12 @@ $(document).ready(function () {
             score: 0
         };
 
-        $('.player2').text("");
+        $('.player1').text("Player 1 Score: ");
         $('.player2').text("Player 2 Score: ");
         $('.player1-score').text("0");
         $('.player2-score').text("0");
         $('#gameBoard').hide();
-        $('#reset , .score-reset').hide("slow");
+        $('#reset').hide("slow");
         $('#firstPage').show("slow");
 
         reset_game();

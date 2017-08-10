@@ -170,13 +170,13 @@ $(document).ready(function () {
             return;
         }
         available_squares.splice(available_squares.indexOf(square_class), 1);
-        var idx = document.getElementById(square_class);
+        var idx = getPosition(square_class);
 
         if (player1.your_turn === true) {
 
             draw(player1, square_class);
 
-            game_model[idx.dataset.idx] = player1.symbol;
+            game_model[idx] = player1.symbol;
 
             if (check_if_endgame()) {
                 if (tie) {
@@ -214,7 +214,8 @@ $(document).ready(function () {
         } else {
 
             draw(player2, square_class);
-            game_model[idx.dataset.idx] = player2.symbol;
+
+            game_model[idx] = player2.symbol;
 
             if (check_if_endgame()) {
                 if (tie) {
@@ -298,8 +299,8 @@ $(document).ready(function () {
             draw(computer, square_class);
 
             available_squares.splice(available_squares.indexOf(square_class), 1);
-            var idx = document.getElementById(square_class);
-            game_model[idx.dataset.idx] = computer.symbol;
+            var idx = getPosition(square_class);
+            game_model[idx] = computer.symbol;
             //console.log(square_class);
 
             computer.your_turn = false;
@@ -600,6 +601,15 @@ $(document).ready(function () {
                 o_arr.push(compendium_of_squares[prop].name);
             }
         }
+        if (x_count < 3 && o_count < 3) {
+            return false;
+        }
+        check_winner(wins_array, x_arr, o_arr);
+        if ((x_count === 5 || o_count === 5) && (winner.X === false && winner.O === false)) {
+            tie = true;
+            game_finished = true;
+        }
+        return game_finished;
     }
 
 
@@ -726,4 +736,37 @@ $(document).ready(function () {
         }
     }
 
+    function getPosition(text_number) {
+        var num = 0;
+        switch (text_number) {
+            case 'one':
+                num = 0;
+                break;
+            case 'two':
+                num = 1;
+                break;
+            case 'three':
+                num = 2;
+                break;
+            case 'four':
+                num = 3;
+                break;
+            case 'five':
+                num = 4;
+                break;
+            case 'six':
+                num = 5;
+                break;
+            case 'seven':
+                num = 6;
+                break;
+            case 'eight':
+                num = 7;
+                break;
+            case 'nine':
+                num = 8;
+                break;
+        }
+        return num;
+    }
 });
